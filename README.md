@@ -3,7 +3,7 @@
 <h1 align="center">LexChain: Modeling Legal Reasoning Chains for Chinese Tort Case Analysis</h1>
 
 <p align="center">
-  🌐 <a href="https://github.com/thunlp/LexChain" target="_blank">GitHub</a> • 📚 <a href="https://arxiv.org/abs/2510.17602" target="_blank">arXiv</a> • 🤗 <a href="https://huggingface.co/datasets/lexchain/LawChain-eval" target="_blank">HuggingFace</a>
+  🌐 <a href="https://github.com/thunlp/LexChain" target="_blank">GitHub</a> • 📚 <a href="https://arxiv.org/abs/2510.17602" target="_blank">arXiv</a> • 🤗 <a href="https://huggingface.co/datasets/lexchain" target="_blank">HuggingFace</a>
 </p>
 
 ---
