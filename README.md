@@ -157,6 +157,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+- Create a `.env` file in the project root and set the following environment variables: `API_KEY` and `URL` (used by scripts that call remote model APIs)
+
+
 ### File layout (important files)
 
 - `inference.sh` — run model inference and save outputs to `inference_result`.
