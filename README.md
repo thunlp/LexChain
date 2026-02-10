@@ -152,3 +152,84 @@ We evaluate various LLMs (GPT-4o, Claude, DeepSeek, Qwen, etc.) on the LexChain<
 }
 ```
 
+## Usage
+
+This repository contains simple scripts to run inference, automated scoring, and summary generation for an evaluation pipeline. The main scripts live at the repository root and call Python modules under `src/eval`.
+
+### Prerequisites
+
+- Python 3.8+
+- A working virtual environment (recommended)
+- Install Python dependencies:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### File layout (important files)
+
+- `inference.sh` — run model inference and save outputs to `inference_result`.
+- `score.sh` — score model outputs against references, results saved to `scoring_result`.
+- `run_summary.sh` — aggregate scoring JSON files into an Excel summary (`scoring_result/scores_summary.xlsx`).
+- `data/test_input.json` — example input file for inference.
+- `data/test_reference.json` — example reference file for scoring.
+- `src/eval/` — contains Python scripts used by the shell wrappers (`inference.py`, `score.py`, `compute_score.py`).
+
+### Data
+
+The data files are NOT included in this repository. Please download the required datasets and place them into the `data/` directory using the exact filenames shown below (the scripts expect these names):
+
+- `data/test_input.json` — input file for inference
+- `data/test_reference.json` — ground-truth references for scoring
+
+If you place files with different names, edit the shell scripts or Python arguments to point to your filenames.
+
+### Quick usage
+
+Make scripts executable (only required once):
+
+```bash
+chmod +x *.sh
+```
+
+Run inference (edit the variables at the top of `inference.sh` if needed):
+
+```bash
+./inference.sh
+```
+
+Run scoring (edit `INPUT_DIR`, `REF_PATH`, or other variables at the top of `score.sh` if needed):
+
+```bash
+./score.sh
+```
+
+Generate score summary from `scoring_result`:
+
+```bash
+./run_summary.sh
+```
+
+Model deployment (note)
+
+If you want to use vLLM, please deploy your model server yourself and ensure it is reachable at the host and port below:
+
+- --host 0.0.0.0
+- --port 8000
+
+Adjust your `*.sh` file accordingly. Once the server is up at that address, the scripts can call it as needed.
+
+
+### Output locations
+
+- Inference outputs: `inference_result/`
+- Scoring outputs: `scoring_result/`
+- Logs: `logs/` (path configured in each script)
+- Summary Excel: `scoring_result/scores_summary.xlsx`
+
+
+
+
+
