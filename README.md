@@ -140,17 +140,6 @@ We evaluate various LLMs (GPT-4o, Claude, DeepSeek, Qwen, etc.) on the LexChain<
 - 🖋️ Codebase: [GitHub](https://github.com/thunlp/LexChain)
 - 📄 Paper: [arXiv:2510.17602](https://arxiv.org/abs/2510.17602)
 
-## 🖊️ Citation
-```bibtex
-@misc{xie2025lexchain,
-      title={LexChain: Modeling Legal Reasoning Chains for Chinese Tort Case Analysis}, 
-      author={Huiyuan Xie and Chenyang Li and Huining Zhu and Chubin Zhang and Yuxiao Ye and Zhenghao Liu and Zhiyuan Liu},
-      year={2025},
-      eprint={2510.17602},
-      archivePrefix={arXiv},
-      url={https://arxiv.org/abs/2510.17602}, 
-}
-```
 
 ## Usage
 
@@ -229,7 +218,17 @@ Adjust your `*.sh` file accordingly. Once the server is up at that address, the 
 - Logs: `logs/` (path configured in each script)
 - Summary Excel: `scoring_result/scores_summary.xlsx`
 
-
+## 🖊️ Citation
+```bibtex
+@misc{xie2025lexchain,
+      title={LexChain: Modeling Legal Reasoning Chains for Chinese Tort Case Analysis}, 
+      author={Huiyuan Xie and Chenyang Li and Huining Zhu and Chubin Zhang and Yuxiao Ye and Zhenghao Liu and Zhiyuan Liu},
+      year={2025},
+      eprint={2510.17602},
+      archivePrefix={arXiv},
+      url={https://arxiv.org/abs/2510.17602}, 
+}
+```
 
 
 
