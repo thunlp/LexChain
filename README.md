@@ -223,14 +223,17 @@ Adjust your `*.sh` file accordingly. Once the server is up at that address, the 
 
 ## 🖊️ Citation
 ```bibtex
-@misc{xie2025lexchain,
-      title={LexChain: Modeling Legal Reasoning Chains for Chinese Tort Case Analysis}, 
-      author={Huiyuan Xie and Chenyang Li and Huining Zhu and Chubin Zhang and Yuxiao Ye and Zhenghao Liu and Zhiyuan Liu},
-      year={2025},
-      eprint={2510.17602},
-      archivePrefix={arXiv},
-      url={https://arxiv.org/abs/2510.17602}, 
+@inproceedings{xie2026lexchain,
+  title={LexChain: Modeling Legal Reasoning Chains for Chinese Tort Case Analysis},
+  author={Xie, Huiyuan and Li, Chenyang and Zhu, Huining and Zhang, Chubin and Ye, Yuxiao and Liu, Zhenghao and Liu, Zhiyuan},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={42},
+  pages={35913--35921},
+  year={2026}
 }
+
+
 ```
 
 
