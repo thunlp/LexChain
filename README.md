@@ -136,9 +136,9 @@ We evaluate various LLMs (GPT-4o, Claude, DeepSeek, Qwen, etc.) on the LexChain<
 ---
 
 ## 🔗 Resources
-- 📂 Dataset: [Hugging Face](https://huggingface.co/datasets/lexchain/LawChain-eval)
+- 📂 Dataset: [Hugging Face](https://huggingface.co/datasets/TsinghuaNLP/LexChain)
 - 🖋️ Codebase: [GitHub](https://github.com/thunlp/LexChain)
-- 📄 Paper: [arXiv:2510.17602](https://arxiv.org/abs/2510.17602)
+- 📄 Paper: [AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/40906)
 
 
 ## Usage
